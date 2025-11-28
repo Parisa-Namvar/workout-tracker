@@ -11,4 +11,4 @@ class User:
         self.email = email
 
 def __repr__(self):
-    print(f"{self.__dict__}")
+    return (f"{self.__dict__}")
