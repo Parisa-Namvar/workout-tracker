@@ -1,15 +1,21 @@
+from model.repository.user_repository import UserRepository
+
+
 class UserService:
+    def __init__(self):
+        self.repository = UserRepository()
+
     def save (self ,user):
-        pass
+        self.repository.save(user)
 
     def update (self ,user):
-        pass
+        self.repository.update(user)
 
     def delete (self ,id):
-        pass
+        self.repository.delete(id)
 
     def find_all(self):
-        pass
+        self.repository.find_all()
 
     def find_one(self ,id):
-        pass
+        self.repository.find_one(id)

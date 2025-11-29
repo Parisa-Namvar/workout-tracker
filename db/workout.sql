@@ -4,6 +4,6 @@ create table if not exists workouts(
     name text,
     sets text,
     reps text,
-    datetime date,
+    workout_date date,
     weight double
 );
