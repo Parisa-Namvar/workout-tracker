@@ -46,3 +46,4 @@ class UserRepository:
         user_list = [ User (*user) for user in self.cursor.fetchall()]
         self.disconnect()
         return user_list
+

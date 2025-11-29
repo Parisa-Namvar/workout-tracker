@@ -47,3 +47,5 @@ class WorkoutRepository:
         workout_list = [Workout(*workout) for workout in self.cursor.fetchall()]
         self.disconnect()
         return workout_list
+
+
