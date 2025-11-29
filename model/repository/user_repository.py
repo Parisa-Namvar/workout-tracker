@@ -3,7 +3,7 @@ from model.entity.user import User
 
 class UserRepository:
     def connect(self):
-        self.connection = sqlite3.connect("./db/workout.db")
+        self.connection = sqlite3.connect("./db/gym.db")
         self.cursor = self.connection.cursor()
 
     def disconnect(self):
